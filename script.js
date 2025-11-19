@@ -1,35 +1,30 @@
-//complete this code
 class Rectangle {
-	constructor(width, height)
-	{
+	constructor(width, height) {
 		this._width = width;
-		this. _height = height;
+		this._height = height;
 	}
 
-	get width()
-	{
+	get width() {
 		return this._width;
 	}
 
-	get height()
-	{
+	get height() {
 		return this._height;
 	}
 
-	getArea(){
+	getArea() {
 		return this._width * this._height;
 	}
 }
 
-class Square extends Reactangle {
-	constructor(side)
-	{
-		super(side,side)
+class Square extends Rectangle {
+	constructor(side) {
+		super(side, side);
 		this._side = side;
 	}
 
-	get perimeter(){
-		return this._side*4;
+	getPerimeter() {
+		return this._side * 4;
 	}
 }
 
